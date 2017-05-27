@@ -59,7 +59,8 @@ within the time threshold.
 
 ## **Program Rohino-a**
 
-The javascript interpreter program `Rohino-a` is from the `Ashes suite` benchmark. The program can be download from [this link]().
+The javascript interpreter program `Rohino-a` is from the `Ashes suite` benchmark. The program can be download 
+from [this link](https://github.com/jrgse/demo/tree/master/example-rhino).
 
 -------------------
  
