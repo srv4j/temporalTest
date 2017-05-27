@@ -82,7 +82,7 @@ We specify the property to be checked as a finite state machine (FSM), where`H` 
 
 After writing the property specification, we need to configure RGSE. Specifically, the five parameters in args represent call string bound, 
 guiding flag, refinement flag, maximum iterations, time threshold, result file name, and slicing flag, respectively. As show below, args ("1", "1"
-"0", "-1", "0,10,0,0", "", "0") set the guiding flag true, and the time threshold to be 10 minutes.
+"0", "-1", "0,10,0,0", "", "0") set the guiding flag true, and the time threshold to be 30 minutes.
 
 ![args](https://raw.githubusercontent.com/srv4j/images/master/args_rohino.jpg)
 
@@ -94,12 +94,14 @@ We can run RGSE in two ways, i.e., running the analysis driver as a Java applica
 for running the script in command line is "./docker_script arg1 arg2 arg3". The three paremeters are used to specify the running mode.
 Specifically, "0 0 0" is for DFS mode, "0 1 0" is for path slicing mode, and "1 0 0" is for our guiding mode. 
 
+
 ---------------------------------
 
 ## **(3). Analysis Result**
 The results include the time and memory consumption, explored iterations, iteration for the accepted path, time for finding 
-the first accepted path, and so on. The result below show that RGSE can find the program path satisfying the FSM in seconds. 
-On the other hand, neither `DFS` nor `slicing` can find the property violation within the time threshold. 
+the first accepted path, and so on. The result below show that RGSE can find the program path satisfying the FSM in 1707841 
+seconds (about 28 minutes). On the other hand, neither `DFS` nor `slicing` can find the property violation even within 1 hour. 
 
+![results](https://raw.githubusercontent.com/srv4j/images/master/rohino_result.jpg)
 
 ---------------------------------
