@@ -84,7 +84,7 @@ After writing the property specification, we need to configure RGSE. Specificall
 guiding flag, refinement flag, maximum iterations, time threshold, result file name, and slicing flag, respectively. As show below, args ("1", "1"
 "0", "-1", "0,10,0,0", "", "0") set the guiding flag true, and the time threshold to be 10 minutes.
 
-![args](https://github.com/srv4j/images/blob/master/args_rohino.jpg)
+![args](https://raw.githubusercontent.com/srv4j/images/master/args_rohino.jpg)
 
 ------------------------------
 
