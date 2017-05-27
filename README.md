@@ -1,7 +1,8 @@
 ﻿Tutorials
 ===========================
 we provide two tutorials for RGSE. We first apply RGSE to analyze a motivation program with respect to the `reader` property, i.e., the inputStreamReader cannot read while closed. 
-Then, we present the analyzing for program `Rohino-a` with respect to the `Enumeration` property, i.e., invoking hasMoreElements before nextElement.  
+Then, we present the analyzing for program `Rohino-a` with respect to the `Enumeration` property, i.e., invoking hasMoreElements before nextElement.
+  
 -------------------------
 
 ## **A Motivation Example**
@@ -24,7 +25,7 @@ We specify the property to be checked as a finite state machine (FSM), where `I`
 `read`, and `close` event of the `reader` property. We recognize an event through comparing its class type and method 
 name with the property specification. 
 		
-![fsm_spec](https://github.com/srv4j/images/blob/master/FSA_moti.jpg)
+![fsm_spec](https://raw.githubusercontent.com/srv4j/images/master/FSA_moti.jpg)
 ![fsm](https://raw.githubusercontent.com/srv4j/images/master/FSM.jpg)
 			
 ------------------------------------------
